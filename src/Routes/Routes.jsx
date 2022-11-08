@@ -9,6 +9,7 @@ import Pricing from "../Components/Pricing";
 import Register from "../Components/Register";
 import Reviews from "../Components/Reviews";
 import Services from "../Components/Services";
+import SingleService from "../Components/SingleService";
 import Main from "../Layout/Main";
 import PrivateRoutes from "./PrivateRoutes";
 
@@ -56,7 +57,13 @@ const router = createBrowserRouter([
             },
             {
                 path: '/services',
+                loader: () => fetch('http://localhost:5000/services'),
                 element: <Services />
+            },
+            {
+                path: '/services/:id',
+                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+                element: <SingleService />
             },
         ]
     },
