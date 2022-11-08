@@ -13,26 +13,26 @@ const router = createBrowserRouter([
         path: '/',
         element: <Main />,
         children: [
-            // {
-            //     path: '/',
-            //     element: <Home />
-            // },
-            // {
-            //     path: '/home',
-            //     element: <Home />
-            // },
-            // {
-            //     path: '/blog',
-            //     element: <PrivateRoutes><Blog /></PrivateRoutes>
-            // },
-            // {
-            //     path: '/login',
-            //     element: <Login />
-            // },
-            // {
-            //     path: '/register',
-            //     element: <Register />
-            // },
+            {
+                path: '/',
+                element: <Home />
+            },
+            {
+                path: '/home',
+                element: <Home />
+            },
+            {
+                path: '/blog',
+                element: <PrivateRoutes><Blog /></PrivateRoutes>
+            },
+            {
+                path: '/login',
+                element: <Login />
+            },
+            {
+                path: '/register',
+                element: <Register />
+            },
         ]
     },
     {
