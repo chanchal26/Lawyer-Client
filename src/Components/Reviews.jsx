@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Context/UserContext';
 
@@ -84,7 +85,9 @@ const Reviews = () => {
                 ))
     }
 
+    const navigate = useNavigate();
     const handleEdit = (id) => {
+        navigate(`/reviews/edit/${id}`)
         fetch(``)
     }
 
