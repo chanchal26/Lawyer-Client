@@ -4,7 +4,6 @@ import {
     GithubAuthProvider,
     GoogleAuthProvider,
     onAuthStateChanged,
-    sendEmailVerification,
     signInWithEmailAndPassword,
     signInWithPopup,
     signOut,
@@ -65,33 +64,33 @@ const UserContext = ({ children }) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     const unsubscribe = onAuthStateChanged(auth, currentUser => {
-    //         setUser(currentUser)
-    //         setLoading(false)
-    //     })
+        const unsubscribe = onAuthStateChanged(auth, currentUser => {
+            setUser(currentUser)
+            setLoading(false)
+        })
 
-    //     return () => {
+        return () => {
 
-    //         unsubscribe()
-    //     }
-    // }, [])
+            unsubscribe()
+        }
+    }, [])
 
-    // const authInfo = {
-    //     user,
-    //     createUser,
-    //     updateName,
-    //     signInWithGoogle,
-    //     signInWithGithub,
-    //     logout,
-    //     login,
-    //     loading,
-    // }
+    const authInfo = {
+        user,
+        createUser,
+        updateName,
+        signInWithGoogle,
+        signInWithGithub,
+        logout,
+        login,
+        loading,
+    }
 
-    // return (
-    //     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
-    // );
+    return (
+        <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
+    );
 };
 
 export default UserContext;
