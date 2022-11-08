@@ -148,7 +148,7 @@ const Header = () => {
                             />
                         </svg>
                     </button>
-                    {/* {isMenuOpen && (
+                    {isMenuOpen && (
                         <div className="absolute top-0 left-0 w-full">
                             <div className="p-5 bg-white border rounded shadow-sm">
                                 <div className="flex items-center justify-between mb-4">
@@ -291,7 +291,7 @@ const Header = () => {
                                 </nav>
                             </div>
                         </div>
-                    )} */}
+                    )}
                 </div>
             </div>
         </div>
