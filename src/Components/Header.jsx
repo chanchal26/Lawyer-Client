@@ -32,9 +32,9 @@ const Header = () => {
                     </li>
                     <li>
                         <Link
-                            href="/"
-                            aria-label="Product pricing"
-                            title="Product pricing"
+                            to="/pricing"
+                            aria-label="pricing"
+                            title="pricing"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
                         >
                             Pricing
@@ -42,7 +42,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link
-                            href="/"
+                            to="/about"
                             aria-label="About us"
                             title="About us"
                             className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
@@ -69,7 +69,7 @@ const Header = () => {
                                     title="About us"
                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
                                 >
-                                    My Reviews
+                                    Reviews
                                 </Link>
                             </li>
                             <li>
@@ -79,7 +79,7 @@ const Header = () => {
                                     title="About us"
                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
                                 >
-                                    Add Services
+                                    Services
                                 </Link>
                             </li>
                         </> : ''
@@ -195,7 +195,7 @@ const Header = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                href="/"
+                                                to="/pricing"
                                                 aria-label="Product pricing"
                                                 title="Product pricing"
                                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
@@ -205,7 +205,7 @@ const Header = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                href="/"
+                                                to="/about"
                                                 aria-label="About us"
                                                 title="About us"
                                                 className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
@@ -232,7 +232,7 @@ const Header = () => {
                                                         title="About us"
                                                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
                                                     >
-                                                        My Reviews
+                                                        Reviews
                                                     </Link>
                                                 </li>
                                                 <li>
@@ -242,7 +242,7 @@ const Header = () => {
                                                         title="About us"
                                                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
                                                     >
-                                                        Add Services
+                                                        Services
                                                     </Link>
                                                 </li>
                                             </> : ''
