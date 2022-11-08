@@ -61,7 +61,7 @@ const Login = () => {
         <div className=" items-center px-5 py-6 lg:px-20">
             <div className="flex flex-col w-full max-w-md p-10 mx-auto my-6 transition duration-500 ease-in-out transhtmlForm bg-white rounded-lg md:mt-0">
                 <div className="mt-8">
-                    {/* <div className="mt-6">
+                    <div className="mt-6">
                         <div className='pb-5'>
                             <h2 className="mt-6 text-3xl font-extrabold text-neutral-600">Log In.</h2>
                         </div>
@@ -126,7 +126,7 @@ const Login = () => {
                                 </div>
                             </button>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>
