@@ -14,12 +14,12 @@ const Blog = () => {
                                     className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                                 >
                                     <p className="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
-                                        what is cors?
+                                        Difference between SQL and NoSQL
                                     </p>
                                 </a>
                             </div>
                             <p className="text-gray-700">
-                                Cross-origin resource sharing (CORS) is a browser security feature that restricts cross-origin HTTP requests that are initiated from scripts running in the browser. If your REST API's resources receive non-simple cross-origin HTTP requests, you need to enable CORS support.
+                                SQL is the programming language used to interface with relational databases. (Relational databases model data as records in rows and tables with logical links between them). NoSQL is a class of DBMs that are non-relational and generally do not use SQL.SQL databases are efficient at processing queries and joining data across tables, making it easier to perform complex queries against structured data, including ad hoc requests. NoSQL databases lack consistency across products and typically require more work to query data, particular as query complexity increases.
                             </p>
                         </div>
                     </div>
@@ -32,12 +32,13 @@ const Blog = () => {
                                     className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                                 >
                                     <p className="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
-                                        Why are you using firebase? What other options do you have to implement authentication?
+                                        What is JWT, and how does it work?
+
                                     </p>
                                 </a>
                             </div>
                             <p className="text-gray-700">
-                                Firebase helps you develop high-quality apps, grow your user base, and earn more money. Each feature works independently, and they work even better together.Firebase provides detailed documentation and cross-platform SDKs to help you build and ship apps on Android, iOS, the web, C++, and Unity.It allows real-time database connection, which means multiple users can see the changes in the data when the data gets created or edited. <br />Auth0, MongoDB, Passport, Okta, and Firebase are the most popular alternatives and competitors to Firebase Authentication.
+                                JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as JSON object. It is compact, readable and digitally signed using a private key/ or a public key pair by the Identity Provider(IdP).JSON Web Tokens are an open, standard way for you to represent your user's identity securely during a two-party interaction. First, the user or client app sends a sign-in request. In this step, essentially, a username, password, or any other type of sign-in credentials the user provides will travel to the API.
                             </p>
                         </div>
                     </div>
@@ -50,12 +51,13 @@ const Blog = () => {
                                     className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                                 >
                                     <p className="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
-                                        How does the private route work?
+                                        What is the difference between javascript and NodeJS?
+
                                     </p>
                                 </a>
                             </div>
                             <p className="text-gray-700">
-                                The react private route component renders child components ( children ) if the user is logged in. If not logged in the user is redirected to the /login page with the return url passed in the location state property.
+                                JavaScript is a simple programming language that can be used with any browser that has the JavaScript Engine installed. Node. js, on the other hand, is an interpreter or execution environment for the JavaScript programming language.Node.js is an open-source, cross-platform JavaScript runtime environment.
                             </p>
                         </div>
                     </div>
@@ -68,12 +70,12 @@ const Blog = () => {
                                     className="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                                 >
                                     <p className="text-3xl font-extrabold leading-none sm:text-4xl xl:text-4xl">
-                                        What is Node? How does Node work?
+                                        How does Node JS handle multiple requests at the same time?
                                     </p>
                                 </a>
                             </div>
                             <p className="text-gray-700">
-                                Node. js is a runtime environment.It is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend. Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.Node. js wastes no time or resources on waiting for I/O requests to return.
+                                NodeJS receives multiple client requests and places them into EventQueue. NodeJS is built with the concept of event-driven architecture. NodeJS has its own EventLoop which is an infinite loop that receives requests and processes them.They handle 40K requests per second having Node.
                             </p>
                         </div>
                     </div>
