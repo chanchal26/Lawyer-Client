@@ -19,12 +19,11 @@ const Footer = () => {
                     </Link>
                     <div className="mt-6 lg:max-w-sm">
                         <p className="text-sm text-gray-800">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium, totam rem aperiam.
+                            Proceedings, wards of the court, sealing of juvenile records, rehabilitation cases where a minor is tried.
                         </p>
                         <p className="mt-4 text-sm text-gray-800">
-                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                            beatae vitae dicta sunt explicabo.
+                            Unlawful possession of firearms, carrying a concealed weapon, firearm conversion, brandishing.
+
                         </p>
                     </div>
                 </div>
@@ -38,7 +37,7 @@ const Footer = () => {
                             href="tel:850-123-5021"
                             aria-label="Our phone"
                             title="Our phone"
-                            className="transition-colors duration-300 text-purple-400 hover:text-deep-purple-800"
+                            className="transition-colors duration-300 text-indigo-500 hover:text-deep-purple-800"
                         >
                             850-123-5021
                         </Link>
@@ -49,7 +48,7 @@ const Footer = () => {
                             href="mailto:info@lorem.mail"
                             aria-label="Our email"
                             title="Our email"
-                            className="transition-colors duration-300 text-purple-400 hover:text-deep-purple-800"
+                            className="transition-colors duration-300 text-indigo-500 hover:text-deep-purple-800"
                         >
                             info@lawyer.com
                         </Link>
@@ -62,7 +61,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             aria-label="Our address"
                             title="Our address"
-                            className="transition-colors duration-300 text-purple-400 hover:text-deep-purple-800"
+                            className="transition-colors duration-300 text-indigo-500 hover:text-deep-purple-800"
                         >
                             312 Lovely Street, NY
                         </Link>
@@ -75,7 +74,7 @@ const Footer = () => {
                     <div className="flex items-center mt-1 space-x-3">
                         <Link
                             href="/"
-                            className="text-gray-500 transition-colors duration-300 hover:text-purple-400"
+                            className="text-gray-500 transition-colors duration-300 hover:text-indigo-500"
                         >
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
                                 <path d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z" />
@@ -83,7 +82,7 @@ const Footer = () => {
                         </Link>
                         <Link
                             href="/"
-                            className="text-gray-500 transition-colors duration-300 hover:text-purple-400"
+                            className="text-gray-500 transition-colors duration-300 hover:text-indigo-500"
                         >
                             <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
                                 <circle cx="15" cy="15" r="4" />
@@ -92,7 +91,7 @@ const Footer = () => {
                         </Link>
                         <Link
                             href="/"
-                            className="text-gray-500 transition-colors duration-300 hover:text-purple-400"
+                            className="text-gray-500 transition-colors duration-300 hover:text-indigo-500"
                         >
                             <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
                                 <path d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z" />
@@ -100,7 +99,7 @@ const Footer = () => {
                         </Link>
                         <Link
                             href="/"
-                            className="text-gray-500 transition-colors duration-300 hover:text-purple-400"
+                            className="text-gray-500 transition-colors duration-300 hover:text-indigo-500"
                         >
                             <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                                 <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
@@ -115,13 +114,13 @@ const Footer = () => {
             </div>
             <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
                 <p className="text-sm text-gray-600">
-                    © Copyright 2020 Lorem Inc. All rights reserved.
+                    © Copyright 2022 Lawyer. All rights reserved.
                 </p>
                 <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                     <li>
                         <Link
                             href="/"
-                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-purple-400"
+                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-indigo-500"
                         >
                             F.A.Q
                         </Link>
@@ -129,7 +128,7 @@ const Footer = () => {
                     <li>
                         <Link
                             href="/"
-                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-purple-400"
+                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-indigo-500"
                         >
                             Privacy Policy
                         </Link>
@@ -137,7 +136,7 @@ const Footer = () => {
                     <li>
                         <Link
                             href="/"
-                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-purple-400"
+                            className="text-sm text-gray-600 transition-colors duration-300 hover:text-indigo-500"
                         >
                             Terms &amp; Conditions
                         </Link>

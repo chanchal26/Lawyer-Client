@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 const ErrorPage = () => {
     return (
@@ -45,6 +46,9 @@ const ErrorPage = () => {
                     </Link>
                 </div>
             </div>
+            <Helmet>
+                <title>Error</title>
+            </Helmet>
         </section>
     );
 };

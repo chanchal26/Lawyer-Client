@@ -2,7 +2,8 @@ import React, { useContext, useState } from 'react';
 import { Form, useLocation, useNavigate } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import { AuthContext } from '../Context/UserContext';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import { Helmet } from "react-helmet";
 
 const Login = () => {
 
@@ -59,6 +60,7 @@ const Login = () => {
 
     return (
         <div className=" items-center px-5 py-6 lg:px-20">
+
             <div className="flex flex-col w-full max-w-md p-10 mx-auto my-6 transition duration-500 ease-in-out transhtmlForm bg-white rounded-lg md:mt-0">
                 <div className="mt-8">
                     <div className="mt-6">
@@ -129,6 +131,9 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
         </div>
     );
 };

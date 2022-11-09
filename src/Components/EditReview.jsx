@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { Helmet } from "react-helmet";
 
 const EditReview = () => {
     const router = useParams();
@@ -48,6 +49,7 @@ const EditReview = () => {
                     Swal.fire(
                         data.message
                     )
+                    setRefresh(true);
                     navigate('/reviews')
                 } else {
                     Swal.fire(
@@ -73,13 +75,13 @@ const EditReview = () => {
                         <div className="p-2 w-1/2 mx-auto">
                             <div className="relative">
                                 <label htmlFor="rating" className="leading-7 text-sm text-gray-600">Rating Out of 10</label>
-                                <input defaultValue={review?.rating} type="number" id="rating" name="rating" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                <input defaultValue={review?.rating} type="number" id="rating" name="rating" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
                             </div>
                         </div>
                         <div className="p-2 w-full">
                             <div className="relative">
                                 <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
-                                <textarea defaultValue={review?.message} id="message" name="message" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                                <textarea defaultValue={review?.message} id="message" name="message" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" required></textarea>
                             </div>
                         </div>
                         <div className="p-2 w-full ">
@@ -88,6 +90,9 @@ const EditReview = () => {
                     </div>
                 </div>
             </div>
+            <Helmet>
+                <title>Edit Review</title>
+            </Helmet>
         </form>
     );
 };

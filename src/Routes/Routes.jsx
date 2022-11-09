@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../Components/About";
+import AddService from "../Components/AddService";
 import Blog from "../Components/Blog";
 import EditReview from "../Components/EditReview";
 import ErrorPage from "../Components/ErrorPage";
@@ -21,10 +22,12 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
+                loader: () => fetch('http://localhost:5000/services/home'),
                 element: <Home />
             },
             {
                 path: '/home',
+                loader: () => fetch('http://localhost:5000/services/home'),
                 element: <Home />
             },
             {
@@ -37,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/blog',
-                element: <PrivateRoutes><Blog /></PrivateRoutes>
+                element: <Blog />
             },
             {
                 path: '/login',
@@ -49,7 +52,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/reviews',
-                element: <Reviews />
+                element: <PrivateRoutes><Reviews /></PrivateRoutes>
             },
             {
                 path: '/reviews/edit/:id',
@@ -58,13 +61,17 @@ const router = createBrowserRouter([
             {
                 path: '/services',
                 loader: () => fetch('http://localhost:5000/services'),
-                element: <Services />
+                element: <PrivateRoutes><Services /></PrivateRoutes>
             },
             {
                 path: '/services/:id',
                 loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
-                element: <SingleService />
+                element: <PrivateRoutes><SingleService /></PrivateRoutes>
             },
+            {
+                path: '/addService',
+                element: <AddService />
+            }
         ]
     },
     {

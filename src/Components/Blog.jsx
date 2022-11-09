@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 
 const Blog = () => {
     return (
@@ -81,6 +82,9 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
+            <Helmet>
+                <title>Blog</title>
+            </Helmet>
         </div>
     );
 };

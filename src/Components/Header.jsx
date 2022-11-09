@@ -6,7 +6,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { user, logout } = useContext(AuthContext);
     return (
-        <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <div className=" px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div className="relative flex items-center justify-between">
                 <Link
                     to="/"
@@ -25,7 +25,7 @@ const Header = () => {
                             to='/home'
                             aria-label="Our product"
                             title="Our product"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                         >
                             Home
                         </Link>
@@ -35,7 +35,7 @@ const Header = () => {
                             to="/pricing"
                             aria-label="pricing"
                             title="pricing"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                         >
                             Pricing
                         </Link>
@@ -45,7 +45,7 @@ const Header = () => {
                             to="/about"
                             aria-label="About us"
                             title="About us"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                         >
                             About us
                         </Link>
@@ -55,7 +55,7 @@ const Header = () => {
                             to='/blog'
                             aria-label="About us"
                             title="About us"
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                         >
                             Blog
                         </Link>
@@ -67,7 +67,7 @@ const Header = () => {
                                     to='/reviews'
                                     aria-label="About us"
                                     title="About us"
-                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                 >
                                     Reviews
                                 </Link>
@@ -77,7 +77,7 @@ const Header = () => {
                                     to='/services'
                                     aria-label="About us"
                                     title="About us"
-                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                                    className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                 >
                                     Services
                                 </Link>
@@ -94,7 +94,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to='/login'
-                                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                                     aria-label="Log In"
                                     title="Log In"
                                 >
@@ -105,7 +105,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to='/login'
-                                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                                     aria-label="Log In"
                                     title="Log In"
                                 >
@@ -115,7 +115,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to='/register'
-                                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                                    className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                                     aria-label="Register"
                                     title="Register"
                                 >
@@ -188,7 +188,7 @@ const Header = () => {
                                                 to='/home'
                                                 aria-label="Our product"
                                                 title="Our product"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                             >
                                                 Home
                                             </Link>
@@ -198,7 +198,7 @@ const Header = () => {
                                                 to="/pricing"
                                                 aria-label="Product pricing"
                                                 title="Product pricing"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                             >
                                                 Pricing
                                             </Link>
@@ -208,7 +208,7 @@ const Header = () => {
                                                 to="/about"
                                                 aria-label="About us"
                                                 title="About us"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                             >
                                                 About us
                                             </Link>
@@ -218,7 +218,7 @@ const Header = () => {
                                                 to='/blog'
                                                 aria-label="About us"
                                                 title="About us"
-                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                                                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                             >
                                                 Blog
                                             </Link>
@@ -230,7 +230,7 @@ const Header = () => {
                                                         to='/reviews'
                                                         aria-label="About us"
                                                         title="About us"
-                                                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                                                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                                     >
                                                         Reviews
                                                     </Link>
@@ -240,7 +240,7 @@ const Header = () => {
                                                         to='/services'
                                                         aria-label="About us"
                                                         title="About us"
-                                                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
+                                                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                                     >
                                                         Services
                                                     </Link>
@@ -253,7 +253,7 @@ const Header = () => {
                                                     <li>
                                                         <Link
                                                             to='/login'
-                                                            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                                                            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                                                             aria-label="Log In"
                                                             title="Log In"
                                                         >
@@ -268,7 +268,7 @@ const Header = () => {
                                                 <li>
                                                     <Link
                                                         to='/login'
-                                                        className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                                                        className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                                                         aria-label="Log In"
                                                         title="Log In"
                                                     >
@@ -278,7 +278,7 @@ const Header = () => {
                                                 <li>
                                                     <Link
                                                         to='/register'
-                                                        className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                                                        className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-indigo-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
                                                         aria-label="Register"
                                                         title="Register"
                                                     >
