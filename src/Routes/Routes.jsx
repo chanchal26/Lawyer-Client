@@ -22,12 +22,12 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                loader: () => fetch('http://localhost:5000/services/home'),
+                loader: () => fetch('https://lawyer-server-theta.vercel.app/services/home'),
                 element: <Home />
             },
             {
                 path: '/home',
-                loader: () => fetch('http://localhost:5000/services/home'),
+                loader: () => fetch('https://lawyer-server-theta.vercel.app/services/home'),
                 element: <Home />
             },
             {
@@ -60,12 +60,12 @@ const router = createBrowserRouter([
             },
             {
                 path: '/services',
-                loader: () => fetch('http://localhost:5000/services'),
+                loader: () => fetch('https://lawyer-server-theta.vercel.app/services'),
                 element: <PrivateRoutes><Services /></PrivateRoutes>
             },
             {
                 path: '/services/:id',
-                loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+                loader: ({ params }) => fetch(`https://lawyer-server-theta.vercel.app/services/${params.id}`),
                 element: <PrivateRoutes><SingleService /></PrivateRoutes>
             },
             {

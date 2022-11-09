@@ -11,7 +11,7 @@ const Reviews = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://lawyer-server-theta.vercel.app/reviews')
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
@@ -31,7 +31,7 @@ const Reviews = () => {
     }, [refresh]);
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/reviews/${id}`, {
+        fetch(`https://lawyer-server-theta.vercel.app/reviews/${id}`, {
             method: 'DELETE'
         }).then(res => res.json())
             .then(data => {

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useLoaderData, useNavigate } from 'react-router-dom';
+import { Link, useLoaderData, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Context/UserContext';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
@@ -18,7 +18,7 @@ const SingleService = () => {
             rating: e.target.rating.value,
             message: e.target.message.value
         }
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://lawyer-server-theta.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -49,7 +49,7 @@ const SingleService = () => {
     };
 
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://lawyer-server-theta.vercel.app/reviews')
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
@@ -69,7 +69,7 @@ const SingleService = () => {
     }, [refresh]);
 
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/reviews/${id}`, {
+        fetch(`https://lawyer-server-theta.vercel.app/reviews/${id}`, {
             method: 'DELETE'
         }).then(res => res.json())
             .then(data => {
@@ -105,6 +105,7 @@ const SingleService = () => {
                 </PhotoView>
             </PhotoProvider>
             <h3 className='text-4xl font-bold my-5'>{services.data.name}</h3>
+            <Link to='/pricing' className='text-indigo-500 text-lg'>Pricing</Link>
             <p className='lg:px-60'>{services.data.details}</p>
             <div>
                 <div>

@@ -11,7 +11,7 @@ const EditReview = () => {
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews/${id}`)
+        fetch(`https://lawyer-server-theta.vercel.app/reviews/${id}`)
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
@@ -36,7 +36,7 @@ const EditReview = () => {
             rating: e.target.rating.value,
             message: e.target.message.value
         }
-        fetch(`http://localhost:5000/reviews/${id}`, {
+        fetch(`https://lawyer-server-theta.vercel.app/reviews/${id}`, {
             method: "PATCH",
             headers: {
                 "content-type": "application/json"

@@ -32,6 +32,7 @@ const Home = () => {
                                                 <div className="flex-1">
                                                     <Link href="#" className="block mt-2">
                                                         <p className="text-xl font-bold text-neutral-600">{service.name}</p>
+                                                        <Link to='/pricing' className='text-indigo-500 text-lg'>Pricing</Link>
                                                         <p className="mt-3 text-base text-gray-500">{service.details.slice(0, 250) + '...'}</p>
                                                     </Link>
                                                 </div>
