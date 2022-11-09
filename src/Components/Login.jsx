@@ -24,13 +24,14 @@ const Login = () => {
 
         login(email, password)
             .then(result => {
+                const user = result.user;
                 Swal.fire(
                     'Good job!',
                     'You have successfully Logged In!',
                     'success'
                 )
                 navigate(from, { replace: true })
-                console.log(result.user)
+                console.log(user)
             })
             .catch(error => setError(error.message))
     }

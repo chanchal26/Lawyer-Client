@@ -7,7 +7,9 @@ import 'react-photo-view/dist/react-photo-view.css';
 import { Helmet } from "react-helmet";
 
 const Home = () => {
-    const services = useLoaderData();
+    const data = useLoaderData();
+    const services = data.data;
+    console.log(data);
     return (
 
         <div>
@@ -18,7 +20,7 @@ const Home = () => {
                     <div className="relative mx-auto max-w-7xl">
                         <div className="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
                             {
-                                services.data.map(service => {
+                                services?.length && services.map(service => {
                                     return (
                                         <div key={service._id} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
                                             <div className="flex-shrink-0">

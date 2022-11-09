@@ -69,7 +69,7 @@ const Header = () => {
                                     title="About us"
                                     className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                 >
-                                    Reviews
+                                    My Reviews
                                 </Link>
                             </li>
                             <li>
@@ -232,7 +232,7 @@ const Header = () => {
                                                         title="About us"
                                                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-indigo-500"
                                                     >
-                                                        Reviews
+                                                        My Reviews
                                                     </Link>
                                                 </li>
                                                 <li>
