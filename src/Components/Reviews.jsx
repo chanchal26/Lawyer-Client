@@ -107,7 +107,7 @@ const Reviews = () => {
                                         </div>
                                         <div>
                                             <h4 className="font-bold">{review.name}</h4>
-                                            <span className="text-xs text-gray-400">2 days ago</span>
+                                            <span className="text-xs text-green-300">just now</span>
                                         </div>
                                     </div>
                                     <div className="flex items-center space-x-2 text-yellow-500">
