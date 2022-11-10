@@ -5,6 +5,7 @@ import Contact from './Contact';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 import { Helmet } from "react-helmet";
+import States from './States';
 
 const Home = () => {
     const data = useLoaderData();
@@ -14,7 +15,7 @@ const Home = () => {
         <div>
             <Banner />
             <div className='mb-5'>
-                <h2 className='text-4xl text-gray-500 font-bold text-center pt-12'>Our Services</h2>
+                <h2 className='text-4xl text-gray-500 font-bold text-center pt-5'>Our Services</h2>
                 <div className="relative px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
                     <div className="relative mx-auto max-w-7xl">
                         <div className="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
@@ -50,34 +51,7 @@ const Home = () => {
                 </div>
                 <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><Link to='/services'>View All</Link></button>
             </div>
-            <section className="p-6 bg-gray-600 text-gray-100">
-                <div className="container mx-auto grid justify-center grid-cols-2 text-center lg:grid-cols-3">
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leading-none lg:text-6xl">50+</p>
-                        <p className="text-sm sm:text-base">Clients</p>
-                    </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leading-none lg:text-6xl">89K</p>
-                        <p className="text-sm sm:text-base">Followers on social media</p>
-                    </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leading-none lg:text-6xl">3</p>
-                        <p className="text-sm sm:text-base">Published books</p>
-                    </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leading-none lg:text-6xl">8</p>
-                        <p className="text-sm sm:text-base">TED talks</p>
-                    </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leading-none lg:text-6xl">22</p>
-                        <p className="text-sm sm:text-base">Years of experience</p>
-                    </div>
-                    <div className="flex flex-col justify-start m-2 lg:m-6">
-                        <p className="text-4xl font-bold leading-none lg:text-6xl">10+</p>
-                        <p className="text-sm sm:text-base">Workshops</p>
-                    </div>
-                </div>
-            </section>
+            <States />
             <section className="my-8">
                 <div className="container mx-auto flex flex-col items-center pb-6 mb-4 md:p-10 md:px-12">
                     <h1 className="text-4xl font-semibold leading-none text-center">What our customers are saying about us</h1>

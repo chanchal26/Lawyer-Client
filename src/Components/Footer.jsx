@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
                 <div className="sm:col-span-2">
                     <Link
-                        href="/"
+                        to="/"
                         aria-label="Go home"
                         title="Company"
                         className="inline-flex items-center"
@@ -107,8 +107,7 @@ const Footer = () => {
                         </Link>
                     </div>
                     <p className="mt-4 text-sm text-gray-500">
-                        Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-                        spare ribs salami.
+                        The digital public humanities project A People’s Atlas of Nuclear Colorado, comprising scholarly essays, artistic contributions, and much more, maps the many ways the nuclear arsenal has shaped the state of Colorado.
                     </p>
                 </div>
             </div>
@@ -119,7 +118,7 @@ const Footer = () => {
                 <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
                     <li>
                         <Link
-                            href="/"
+                            to="/about"
                             className="text-sm text-gray-600 transition-colors duration-300 hover:text-indigo-500"
                         >
                             F.A.Q

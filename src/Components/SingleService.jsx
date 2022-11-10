@@ -76,6 +76,12 @@ const SingleService = () => {
                     <div className=" px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
                         <div className=" mx-auto max-w-7xl">
                             <div className="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
+                                {
+                                    reviews?.length === 0 && <div className='text-center'>
+                                        <h2 className='text-3xl font-bold'>No Review added</h2>
+                                        <p className='text-2xl font-semibold'>Please Add a Review</p>
+                                    </div>
+                                }
 
                                 {
                                     reviews.map(review =>
@@ -87,7 +93,7 @@ const SingleService = () => {
                                                     </div>
                                                     <div>
                                                         <h4 className="font-bold">{review.name}</h4>
-                                                        <span className="text-xs text-gray-400">2 days ago</span>
+                                                        <span className="text-xs text-green-300">Few Minute Ago</span>
                                                     </div>
                                                 </div>
                                                 <div className="flex items-center space-x-2 text-yellow-500">

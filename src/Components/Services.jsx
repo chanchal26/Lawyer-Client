@@ -14,6 +14,13 @@ const Services = () => {
                 <div className="relative mx-auto max-w-7xl">
                     <div className="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
                         {
+                            services?.length === 0 && <div className='text-center'>
+                                <h2 className='text-3xl font-bold'>No Services added</h2>
+                                <p className='text-2xl font-semibold'>To Add Services please <Link to='/login'>Login</Link></p>
+                            </div>
+                        }
+                        {
+
                             services.data.map(service => {
                                 return (
                                     <div key={service._id} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
