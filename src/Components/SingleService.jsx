@@ -11,9 +11,8 @@ const SingleService = () => {
     const [reviews, setReviews] = useState([]);
 
 
-
     useEffect(() => {
-        fetch('https://lawyer-server-theta.vercel.app/reviews')
+        fetch(`https://lawyer-server-theta.vercel.app/reviews`)
             .then(res => res.json())
             .then(data => {
                 if (data.success) {
@@ -30,7 +29,7 @@ const SingleService = () => {
                     err.message
                 )
             })
-    }, [refresh]);
+    }, [refresh, services]);
 
     const handleDelete = (id) => {
         fetch(`https://lawyer-server-theta.vercel.app/reviews/${id}`, {
@@ -58,6 +57,9 @@ const SingleService = () => {
         navigate(`/reviews/edit/${id}`)
     }
 
+    const handleAddReview = (name) => {
+        navigate(`/addReview/${name}`)
+    }
 
 
     return (
@@ -74,15 +76,14 @@ const SingleService = () => {
             <div>
                 <div>
                     <div className=" px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+                        {
+                            reviews?.length === 0 && <div className='text-center'>
+                                <h2 className='text-3xl font-bold'>No Review added</h2>
+                                <p className='text-2xl font-semibold'>Please Add a Review</p>
+                            </div>
+                        }
                         <div className=" mx-auto max-w-7xl">
                             <div className="grid max-w-lg gap-5 mx-auto lg:grid-cols-3 lg:max-w-none">
-                                {
-                                    reviews?.length === 0 && <div className='text-center'>
-                                        <h2 className='text-3xl font-bold'>No Review added</h2>
-                                        <p className='text-2xl font-semibold'>Please Add a Review</p>
-                                    </div>
-                                }
-
                                 {
                                     reviews.map(review =>
                                         <div key={review._id} className="container flex flex-col w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 bg-gray-900 text-gray-100">
@@ -119,7 +120,7 @@ const SingleService = () => {
                     </div>
                 </div>
                 <div className="p-2 w-full ">
-                    <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"><Link to='/reviews'>Add Review</Link></button>
+                    <button onClick={() => handleAddReview(services.data.name)} className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"> Add Review</button>
                 </div>
 
             </div>

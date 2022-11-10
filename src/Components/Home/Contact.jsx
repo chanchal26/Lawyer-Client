@@ -39,7 +39,7 @@ const Contact = () => {
                         </p>
                     </div>
                 </div>
-                <form onSubmit={handleSubmit} novalidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
+                <form onSubmit={handleSubmit} noValidate="" className="flex flex-col py-6 space-y-6 md:py-0 md:px-6 ng-untouched ng-pristine ng-valid">
                     <label className="block">
                         <span className="mb-1">Full name</span>
                         <input required type="text" placeholder="Leroy Jenkins" className="py-2 block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:ring-violet-400 bg-gray-400" />
