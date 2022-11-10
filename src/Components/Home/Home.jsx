@@ -9,7 +9,6 @@ import { Helmet } from "react-helmet";
 const Home = () => {
     const data = useLoaderData();
     const services = data.data;
-    console.log(data);
     return (
 
         <div>
